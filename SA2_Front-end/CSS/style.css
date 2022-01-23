@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background-color: #303030;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+
+  padding: 0 20px 0 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+}
+
+.container-grid {
+  width: 100%;
+  height: 150px;
+
+  margin-bottom: 20px;
+  margin: auto;
+}
+
+.logo-img{
+  width: 120px;
+  height: 120px;
+  
+  position: absolute;
+  right: 45%;
+  top: 10px;
+}
+
+.search-container{
+  width: 500px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+
+  background-color: #424242;
+  
+  position: absolute;
+  top: 35px;
+  left: 25px;
+}
+
+.search-container > i {
+  font-size: 24px;
+  color: #FFF;
+  margin-left: 470px;
+}
+
+.search-container > input {
+  flex: 1;
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  
+  position: absolute;
+  left: 10px;
+
+
+  background: transparent;
+
+  font-size: 20px;
+  color: white;
+}
+
+::placeholder{
+  color: #ABAAAD;
+  font-size:20px;
+}
+
+
+.icon-btn{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+
+  width: 180px;
+  height: 30px;
+
+  position: absolute;
+  top: 55px;
+  right: 120px;
+
+  
+  background: transparent;
+}
+
+.icon-btn > a > i {
+  font-size: 30px;
+  color: #FFF;
+
+}
+
+.banner {
+
+  background-image: url(../IMG/Banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 300px;
+  width: 100%; 
+}
+
+.produtos-section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+
+  
+
+  position: static;
+  
+
+}
+
+
+.produto a img {
+  width: 200px;
+  height: 200px;
+}
+.produto :nth-child(2){
+  margin-left: 40px ;
+}
+
+.produtos-section :first-child{
+  margin-left: 20px;
+}
+
+.produtos-section :last-child {
+  margin-right: 55px;
+}
+
+.produto h5 {
+  width: 180px;
+  font-size: 12px;
+  
+  text-align: justify;
+}
+
+.produtos-section2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  position: absolute;
+  top: 900px;
+}
+
+.produto02 {
+
+  margin: 50px 20px 0 50px;
+}
+
+.produto02 a img {
+  width: 200px;
+  height: 200px;
+}
