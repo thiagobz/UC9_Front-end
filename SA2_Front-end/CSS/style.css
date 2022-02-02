@@ -1,81 +1,72 @@
 * {
   margin: 0;
   padding: 0;
+
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+
 }
 
-body{
+body {
   background-color: #303030;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  position: relative;
-
-  padding: 0 20px 0 20px;
 }
 
 header {
-  width: 100%;
-  height: 60%;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  margin-bottom: 20px;
-
-  position: relative;
-
+  background-color: #303030;
 }
 
 .container-grid {
-  width: 100%;
-  height: 100%;
+  width: 1200px;
+  height: 150px;
+
+  position: relative;
+
+  margin: auto;
   display: flex;
   justify-content: space-between;
+}
 
+.menu-left {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 2px;
 }
 
 .search{
-  width: 40%;
-  height: 30%;
+  width: 490px;
+  height: 50px;
 
-  background-color: #424242;
-  
-  position: absolute;
-  top: 20px;
-  left: 12px;
+  margin-top: 15px;
+
+  background-color: #404040;
+
 }
 
 .search > i {
+  align-self: center;
+  padding-top: 11px;
+  padding-left: 15px;
   font-size: 24px;
   color: #FFF;
-  margin-left: 90%;
 
-  position: absolute;
-  top: 25%;
-  right: 3%;
+  margin-left: 90%;
 }
 
 .search > input {
-  flex: 1;
   border: none;
   outline: none;
-  height: 100%;
-  width: 100%;
-  
-  position: absolute;
-  left: 5px;
-  top: 3px;
-
+  height: 50px;
+  width: 480px;
 
   background: transparent;
 
   font-size: 20px;
   color: white;
+
+  position: absolute;
+  left: 10px;
+  top: ;
 }
 
 .search ::placeholder{
@@ -84,26 +75,32 @@ header {
 }
 
 .btn-categoria {
-  align-self: center;
-
-  position: absolute;
-  left: 12px;
-
+  
   padding: 0;
   border: none;
   outline: none;
   
+  position: relative;
+
   margin-top: 15px;
+}
+.btn-categoria .button {
+  width: 400px;
+  height: 65px;
+
+  position: absolute;
+  left: 0;
 }
 .button > i {
   font-size: 40px;
   position: absolute;
-  left: 20px;
-  top: 15px;
+  left: 15px;
+  top: 12px;
 }
 
 .button {
   width: 25%;
+  height: 65px;
 
   position: absolute;
   left: 5px;
@@ -114,48 +111,47 @@ header {
   font-size: 1.1em;
   font-weight: bold;
 
-  padding-top: 5px;
-  padding-bottom: 0;
   margin: 0 auto;
 }
 
 .logo-img{
-  background-image: url(../IMG/Ico.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  width: 100px;
+  height: 100px;
+  margin: 0;
 
-  width: 6%;
-  height: 40%;
+  align-self: center;
 
   position: absolute;
-  right: 45%;
-  top: 10%;
+  left: 50%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
+.logo-img img{
+  width: 300%;
+  height: 300%;
+}
+
 .logo-img > p {
-  position: absolute;
-  top: 100%;
-  left: -45%;
-  
-  width: 150px;
+ 
+  width: 100px;
   
   font-size: 1.3em;
   font-weight: bold;
   color: #FFF;
-  text-align: center;
 
-  padding-top: 10px;
 }
 
-.icon-btn{
-  width: 15%;
-  height: 30px;
+.icon-btn {
+  width: 200px;
 
-  position: absolute;
-  right: 5%;
-  top: 40%;
-  
+  display: flex;
+
   background: transparent;
-  
+
+  margin-top: 5%;
 }
 
 .icon-btn > a {
@@ -163,37 +159,30 @@ header {
 }
 
 .icon-btn > a > i {
-  font-size: 180%;
+  font-size: 40px;
   color: #FFF;
-
 }
 
-.container-banner {
-  width: 104%;
-  height: 85%;
 
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 
 .banner {
+  width: 1200px;
+ 
+  margin-top: 10px;
+  
+}
 
-  background-image: url(../IMG/Banner.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-
-  height: 100%;
-  width: 100%;
-
+.banner img{
+  flex: 100%;
+  height: 200px;
+  width: 1200px;
 
 }
 
 .produtos-section {
-   align-items: center;
-  
-   position: relative;
-   
-
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
 }
 
 
@@ -201,45 +190,160 @@ header {
   width: 200px;
   height: 200px;
 }
-.produto :nth-child(2){
-  margin-left: 40px ;
-}
 
-.produtos-section :first-child{
-  margin-left: 20px;
-}
-
-.produtos-section :last-child {
-  margin-right: 55px;
-}
-
-.produto{
-  position: absolute;
-  top: 40px;
+.produto a {
+  text-decoration: none;
 }
 
 .produto h5 {
-  width: 180px;
+  width: 200px;
   font-size: 14px;
-  
-  text-align: left;
+  color: #E5E5E5;
+
+  padding-top: 5px;
+  margin: 0 auto;
+}
+
+.produto p {
+  width: 200px;
+  margin: 0;
+}
+
+.text1 {
+  font-size: 11px;
+  color: #E90313;
+  padding-top: 10px;
+}
+
+.text2{
+  font-size: 11px;
+  color:#00E525;
+}
+
+.text3 {
+  font-size: 14px;
+  color:#00E525;
+}
+
+.text4{
+  font-size: 11px;
+  color: #E5E5E5;
+}
+
+.text5 {
+  font-size: 14px;
+  color: #E90313;
+}
+
+.text6{
+  font-size: 11px;
+  color: #E5E5E5;
+}
+
+.text7 {
+  font-size: 11px;
+  color: #E5E5E5;
+}
+
+.in-text {
+  color: #E90313;
 }
 
 .produtos-section2 {
+  margin-top: 400px;
+
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 
-  position: absolute;
-  top: 900px;
-}
-
-.produto02 {
-
-  margin: 50px 20px 0 50px;
 }
 
 .produto02 a img {
   width: 200px;
   height: 200px;
 }
+
+.produto02 h5 {
+  width: 200px;
+  font-size: 14px;
+  color: #E5E5E5;
+
+  padding-top: 5px;
+  margin: 0 auto;
+}
+
+.produto02 p {
+  width: 200px;
+  margin: 0;
+}
+
+.produto02 a {
+  text-decoration: none;
+}
+
+.rodape {
+  margin-top: 350px;
+  margin-bottom: 50px;
+  height: 200px;
+  background-color: #424242;
+}
+
+.logo-rodape {
+height: 100px;
+align-self: center;
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+margin-left: 40px;
+}
+
+.logo-rodape a {
+  align-self: center;
+}
+
+.logo-rodape h3 {
+  align-items: center;
+  font-weight: 700;
+  color: #FFF;
+  padding-top: 10px;
+}
+
+.logo-rodape img{
+  width: 100px;
+  height: 100px;
+}
+
+.lista-info { 
+  align-self: center;
+  padding-left: 45px;
+  list-style-type: none;
+  margin: 0 auto;
+}
+.lista-info li {
+  padding-bottom: 5px;
+}
+
+.lista-info a {
+  text-decoration: none;
+  color: #FFF;
+}
+.lista-info span {
+  font-weight: bold;
+}
+
+.certificados {
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.certificados h4 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFF;
+}
+
+.certificados img{
+  width: 350px;
+  height: 100px;
+} 
