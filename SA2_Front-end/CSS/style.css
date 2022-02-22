@@ -454,7 +454,7 @@ header {
   .search input {
     width: 340px;
     height: 60px;
-    
+
     position: absolute;
     top: 0px;
     left: 0px;
@@ -569,10 +569,10 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
     position: relative;
     top: 80px;
-  
+
   }
 
   .produto02 {
@@ -612,4 +612,3 @@ header {
     top: 300px;
   }
 }
-
