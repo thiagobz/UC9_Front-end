@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +35,7 @@ header {
   margin-left: 2px;
 }
 
-.search{
+.search {
   width: 490px;
   height: 50px;
 
@@ -43,7 +45,7 @@ header {
 
 }
 
-.search > i {
+.search>i {
   align-self: center;
   padding-top: 11px;
   padding-left: 15px;
@@ -53,7 +55,7 @@ header {
   margin-left: 90%;
 }
 
-.search > input {
+.search>input {
   border: none;
   outline: none;
   height: 50px;
@@ -66,24 +68,24 @@ header {
 
   position: absolute;
   left: 10px;
-  top: ;
 }
 
-.search ::placeholder{
+.search ::placeholder {
   color: #ABAAAD;
-  font-size:20px;
+  font-size: 20px;
 }
 
 .btn-categoria {
-  
+
   padding: 0;
   border: none;
   outline: none;
-  
+
   position: relative;
 
   margin-top: 15px;
 }
+
 .btn-categoria .button {
   width: 400px;
   height: 65px;
@@ -91,7 +93,8 @@ header {
   position: absolute;
   left: 0;
 }
-.button > i {
+
+.button>i {
   font-size: 40px;
   position: absolute;
   left: 15px;
@@ -106,7 +109,7 @@ header {
   left: 5px;
 }
 
-.button > p {
+.button>p {
   text-align: right;
   font-size: 1.1em;
   font-weight: bold;
@@ -114,7 +117,7 @@ header {
   margin: 0 auto;
 }
 
-.logo-img{
+.logo-img {
   width: 100px;
   height: 100px;
   margin: 0;
@@ -129,15 +132,15 @@ header {
   align-items: center;
 }
 
-.logo-img img{
+.logo-img img {
   width: 300%;
   height: 300%;
 }
 
-.logo-img > p {
- 
+.logo-img>p {
+
   width: 100px;
-  
+
   font-size: 1.3em;
   font-weight: bold;
   color: #FFF;
@@ -154,25 +157,23 @@ header {
   margin-top: 5%;
 }
 
-.icon-btn > a {
+.icon-btn>a {
   padding: 0;
 }
 
-.icon-btn > a > i {
+.icon-btn>a>i {
   font-size: 40px;
   color: #FFF;
 }
 
-
-
 .banner {
   width: 1200px;
- 
+
   margin-top: 10px;
-  
+
 }
 
-.banner img{
+.banner img {
   flex: 100%;
   height: 200px;
   width: 1200px;
@@ -184,7 +185,6 @@ header {
   display: flex;
   flex-direction: row;
 }
-
 
 .produto a img {
   width: 200px;
@@ -215,17 +215,17 @@ header {
   padding-top: 10px;
 }
 
-.text2{
+.text2 {
   font-size: 11px;
-  color:#00E525;
+  color: #00E525;
 }
 
 .text3 {
   font-size: 14px;
-  color:#00E525;
+  color: #00E525;
 }
 
-.text4{
+.text4 {
   font-size: 11px;
   color: #E5E5E5;
 }
@@ -235,7 +235,7 @@ header {
   color: #E90313;
 }
 
-.text6{
+.text6 {
   font-size: 11px;
   color: #E5E5E5;
 }
@@ -289,13 +289,13 @@ header {
 }
 
 .logo-rodape {
-height: 100px;
-align-self: center;
-display: flex;
-justify-content: center;
-flex-direction: column;
+  height: 100px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
-margin-left: 40px;
+  margin-left: 40px;
 }
 
 .logo-rodape a {
@@ -309,17 +309,18 @@ margin-left: 40px;
   padding-top: 10px;
 }
 
-.logo-rodape img{
+.logo-rodape img {
   width: 100px;
   height: 100px;
 }
 
-.lista-info { 
+.lista-info {
   align-self: center;
   padding-left: 45px;
   list-style-type: none;
   margin: 0 auto;
 }
+
 .lista-info li {
   padding-bottom: 5px;
 }
@@ -328,6 +329,7 @@ margin-left: 40px;
   text-decoration: none;
   color: #FFF;
 }
+
 .lista-info span {
   font-weight: bold;
 }
@@ -343,7 +345,7 @@ margin-left: 40px;
   color: #FFF;
 }
 
-.certificados img{
+.certificados img {
   width: 350px;
   height: 100px;
-} 
+}
