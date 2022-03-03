@@ -180,6 +180,14 @@ header {
 
 }
 
+#carrosel img{
+  display: none;
+}
+
+.banner-ativo{
+  display: flex;
+}
+
 .produtos-section {
   margin-top: 150px;
   display: flex;
