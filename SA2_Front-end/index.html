@@ -16,7 +16,7 @@
 	<title>Home - Game Mania</title>
 </head>
 
-<body>
+<body onload="renderProd(); renderProd2()">
 	<header>
 		<div class="container-grid">
 			<div class="menu-left row">
@@ -64,24 +64,27 @@
 				<a href="#ajuda" class="col-sm-4">
 					<i class="far fa-question-circle" aria-hidden="true"></i>
 				</a>
-				<a href="#usuario" class="col-sm-4">
+				<a href="login.html" class="col-sm-4">
 					<i class="fa fa-user-circle-o" aria-hidden="true"></i>
 				</a>
-				<a href="#carrinho" class="col">
+				<a href="carrinho.html" class="col">
 					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 				</a>
 			</div>
 		</div>
 	</header>
 
-	<section class="container-grid banner">
+	<section id="carrosel" class="container-grid banner">
 		<div class="row">
 			<a href="#promocao" class="col">
+				<img src="IMG/Banner.png" alt="banner do site">
+				<img src="IMG/Banner.png" alt="banner do site">
 				<img src="IMG/Banner.png" alt="banner do site">
 			</a>
 		</div>
 	</section>
 
+<<<<<<< HEAD
 	<div class="container-grid separador">
 	</div>
 
@@ -212,6 +215,11 @@
 				<p class="text7">sem juros no cartão</p>
 			</a>
 		</div>
+=======
+	<section class="produtos-section container-grid" id="produtos-section">
+	</section>
+	<section class="produtos-section2 container-grid" id="produtos-section2">
+>>>>>>> 7d1435db4c397d99095d8d9af93fc5d346dac417
 	</section>
 
 	<footer class="container-grid rodape">
@@ -238,6 +246,7 @@
 <script>
 	let menu = document.getElementById('menu');
 
+<<<<<<< HEAD
 	function showMenu() {
 		if (menu.style.display != "flex") {
 			menu.style.display = "flex";
@@ -249,5 +258,11 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 	integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
 	</script>
+=======
+<script src="JS/jquery-3.6.0.js"></script>
+<script src="JS/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+>>>>>>> 7d1435db4c397d99095d8d9af93fc5d346dac417
 
 </html>
