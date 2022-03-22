@@ -436,6 +436,7 @@ header {
 .certificados img {
   width: 350px;
   height: 100px;
+<<<<<<< HEAD
 }
 
 @media screen and (max-width: 768px) {
@@ -631,4 +632,6 @@ header {
     position: relative;
     top: 300px;
   }
+=======
+>>>>>>> 7d1435db4c397d99095d8d9af93fc5d346dac417
 }
