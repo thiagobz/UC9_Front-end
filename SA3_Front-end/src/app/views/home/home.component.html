@@ -1,0 +1,39 @@
+<div class="bg container">
+
+<section class="produtos-section container" id="produtos-section">
+  <div class="produto" *ngFor="let products of listaProd">
+    <a href="#prod">
+      <img src="{{products.img}}" alt="">
+      <h5>
+        {{products.titulo}}
+      </h5>
+      <p class="text1">{{products.p1}}</p>
+      <p class="text2">{{products.p2}}</p>
+      <p class="text3">{{products.p3}}</p>
+      <p class="text4">{{products.p4}}</p>
+      <p class="text5">{{products.p5}}</p>
+      <p class="text6">{{products.p6}}</p>
+      <p class="text7">{{products.p7}} <span class="in-text">{{products.span}}</span></p>
+    </a>
+  </div>
+
+</section>
+<section class="produtos-section2 container" id="produtos-section2">
+  <div class="produto02" *ngFor="let products of listaProd2">
+    <a href="#prod">
+      <img src="{{products.img}}" alt="">
+      <h5>
+        {{products.titulo}}
+      </h5>
+      <p class="text1">{{products.p1}}</p>
+      <p class="text2">{{products.p2}}</p>
+      <p class="text3">{{products.p3}}</p>
+      <p class="text4">{{products.p4}}</p>
+      <p class="text5">{{products.p5}}</p>
+      <p class="text6">{{products.p6}}</p>
+      <p class="text7">{{products.p7}} <span class="in-text">{{products.span}}</span></p>
+    </a>
+  </div>
+</section>
+
+</div>
