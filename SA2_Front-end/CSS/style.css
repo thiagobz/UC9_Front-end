@@ -21,7 +21,6 @@ header {
 }
 
 .container-grid {
-  width: 1200px;
   height: 150px;
 
   position: relative;
@@ -31,31 +30,45 @@ header {
   justify-content: space-between;
 }
 
+.cabecalho {
+  height: 250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #404040;
+  
+}
+
 .menu-left {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   margin-left: 2px;
+  margin-left: 20px;
 }
 
 .search {
   width: 490px;
   height: 50px;
 
-  margin-top: 15px;
+  margin-top: 0px;
+  margin-bottom: 20px;
 
-  background-color: #404040;
+  background-color: #FFF;
 
+  display: flex;
+  align-items: center;
 }
 
 .search>i {
-  align-self: center;
   padding-top: 11px;
   padding-left: 15px;
   font-size: 24px;
-  color: #FFF;
-
-  margin-left: 90%;
+  color: #303030;
+  margin: auto 0;
+  padding: 0;
 }
 
 .search>input {
@@ -63,14 +76,13 @@ header {
   outline: none;
   height: 50px;
   width: 480px;
+  margin: 0;
 
   background: transparent;
 
   font-size: 20px;
   color: white;
-
-  position: absolute;
-  left: 10px;
+  
 }
 
 .search ::placeholder {
@@ -101,6 +113,7 @@ header {
   height: 200%;
   border-radius: 5px;
   background-color: #424242;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
   display: none;
 
@@ -151,7 +164,7 @@ header {
   font-size: 40px;
   position: absolute;
   left: 15px;
-  top: 12px;
+  top: 5px;
 }
 
 .button {
@@ -202,15 +215,18 @@ header {
 
 .icon-btn {
   width: 200px;
+  height: 100%;
 
   display: flex;
-
+  justify-content: space-between;
+  justify-items: center;
   background: transparent;
 
-  margin-top: 5%;
+  margin: 0 10%;
 }
 
 .icon-btn>a {
+  margin: auto 0;
   padding: 0;
 }
 
@@ -220,17 +236,42 @@ header {
 }
 
 .banner {
-  width: 1200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
+  /* -webkit-box-shadow: 1px 1px 13px 8px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 13px 8px rgba(0, 0, 0, 0.75); */
+
+  width: 100%;
+  height: 450px;
   margin-top: 10px;
 
 }
 
-.banner img {
-  flex: 100%;
-  height: 200px;
-  width: 1200px;
+.img1 {
+  background-image: url("../IMG/GameManiaB1.png");
+  transition: 1s;
+}
 
+.img2 {
+  background-image: url("../IMG/GameManiaB2.png");
+  transition: 1s;
+}
+
+.img3 {
+  background-image: url("../IMG/GameManiaB3.png");
+  transition: 1s;
+}
+
+.progress-bar {
+  width: 0%;
+  display: block;
+}
+
+.progress.active .progress-bar {
+  -webkit-transition: none !important;
+  transition: none !important;
 }
 
 .separador {
@@ -245,8 +286,13 @@ header {
   top: 60px;
 }
 
+.lista-prod {
+  background-color: #424242;
+  height: 1200px;
+  padding-top: 100px;
+}
+
 .produtos-section {
-  margin-top: 130px;
   display: flex;
   flex-direction: row;
 }
@@ -347,19 +393,19 @@ header {
 }
 
 .rodape {
-  margin-top: 350px;
+  margin-top: 5px;
   margin-bottom: 50px;
   height: 200px;
   background-color: #424242;
 }
 
 .logo-rodape {
-  height: 100px;
+  height: 70px;
   align-self: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
-
+  margin-top: -10px;
   margin-left: 40px;
 }
 
@@ -380,14 +426,19 @@ header {
 }
 
 .lista-info {
-  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 40px 0 0 0;
   padding-left: 45px;
   list-style-type: none;
-  margin: 0 auto;
 }
 
 .lista-info li {
   padding-bottom: 5px;
+  width: 350px;
 }
 
 .lista-info a {
@@ -432,6 +483,10 @@ header {
     width: 75px;
 
     margin: 0;
+  }
+
+  .jquerymenu {
+    display: flex;
   }
 
   .search {
@@ -513,10 +568,12 @@ header {
   }
 
   .banner {
-    background-image: url("../IMG/Banner-sp.png");
+    background-image: url("../IMG/GameManiaB1.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
+    width: 768px;
+    max-width: 768px;
     height: 250px;
   }
 

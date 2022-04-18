@@ -17,16 +17,16 @@
 </head>
 
 <body onload="renderProd(); renderProd2()">
-	<header>
-		<div class="container-grid">
+	<header class="container">
+		<div class="container-grid cabecalho">
 			<div class="menu-left row">
-				<div class="search col-2">
-					<i class="fas fa-search"></i>
+				<div class="search">
 					<input type="text" placeholder="Digite aqui o que deseja procurar!">
+					<i class="fas fa-search"></i>
 				</div>
 
-				<div class="btn-categoria col" onclick="showMenu()">
-					<button type="button" class="button btn btn-danger">
+				<div class="btn-categoria col">
+					<button type="button" id="btnMenu" class="button btn btn-danger">
 						<i class="fas fa-bars"></i>
 						<p>Todos os <br>
 							departamentos</p>
@@ -74,48 +74,44 @@
 		</div>
 	</header>
 
-	<section id="carrosel" class="container-grid banner">
-		<div class="row">
-			<a href="#promocao" class="col">
-				<img src="IMG/Banner.png" alt="banner do site">
-				<img src="IMG/Banner.png" alt="banner do site">
-				<img src="IMG/Banner.png" alt="banner do site">
-			</a>
+	<section id="banner" class="container-grid banner img1">
+		<div class="progress progress-striped active" style="background-color: transparent;;"></div>>
+		<div class="progress-bar progress-bar-success active" style="width: 0% !important;"></div>
 		</div>
 	</section>
 
-	<section class="produtos-section container-grid" id="produtos-section">
-	</section>
-	<section class="produtos-section2 container-grid" id="produtos-section2">
-	</section>
+	<div class="container lista-prod" ">
+		<section class="produtos-section container-grid" id="produtos-section">
+		</section>
+		<section class="produtos-section2 container-grid" id="produtos-section2">
+		</section>
+	</div>
+	<footer class="container rodape">
+		<div class="container-grid">
+			<div class="logo-rodape">
+				<a href="index.html">
+					<img src="IMG/Ico.png" alt="logo rodape">
+				</a>
+				<h3>Game Mania</h3>
+			</div>
 
-	<footer class="container-grid rodape">
-		<div class="logo-rodape">
-			<a href="index.html">
-				<img src="IMG/Ico.png" alt="logo rodape">
-			</a>
-			<h3>Game Mania</h3>
-		</div>
-
-		<ul class="lista-info col">
-			<li><a href="#info">Informações</a></li>
-			<li><a href="#contact">Contato</a></li>
-			<li><a href="#sobrenos">Sobre a Game Mania</a></li>
-			<li><a href="#endereco">Endereço:
-					<span>Rua A, 3030, Rio de Janeiro, RJ</span></a></li>
-		</ul>
-		<div class="certificados">
-			<h4>Certificado de segurança</h4>
-			<img src="IMG/certificado.png" alt="Certificados de segurança">
+			<ul class="lista-info col">
+				<li><a href="#info">Informações</a></li>
+				<li><a href="#contact">Contato</a></li>
+				<li><a href="#sobrenos">Sobre a Game Mania</a></li>
+				<li><a href="#endereco">Endereço:
+						<span>Rua A, 3030, Rio de Janeiro, RJ</span></a></li>
+			</ul>
+			<div class="certificados">
+				<h4>Certificado de segurança</h4>
+				<img src="IMG/certificado.png" alt="Certificados de segurança">
+			</div>
 		</div>
 	</footer>
 </body>
-<script>
-	let menu = document.getElementById('menu');
-</script>
 <script src="JS/jquery-3.6.0.js"></script>
 <script src="JS/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </html>

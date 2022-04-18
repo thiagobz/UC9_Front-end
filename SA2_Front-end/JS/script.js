@@ -1,29 +1,42 @@
-$( document ).ready(function() {
-
-  $("#carrosel img:eq(0)").addClass("banner-ativo").show()
-
-  setInterval(slide, 1000)
-
-  function slide(){
-      if($(".banner-ativo").next().length ){
-          $(".banner-ativo").removeClass("banner-ativo").hide().next().addClass("banner-ativo").show()
-      }else{
-          $(".banner-ativo").removeClass().hide()
-          $("#carrosel img:eq(0)").addClass("banner-ativo").show()
-      }
-  }
-
-  $("#barras").click(function () {
-      $("#menu").toggleClass("menu-ativo")
-
-      // if ($("#menu").hasClass("menu-ativo")) {
-      //     $("#menu").removeClass("menu-ativo")
-      // } else {
-      //     $("#menu").addClass("menu-ativo")
-      // }
+$(document).ready(function () {
+  $("#menu").click(function () {
+    $("#menu").toggle("jquerymenu");
   })
 
-  console.log(slide);
+  let slideAtual = 1;
+  let listaSlides = ["img1", "img2", "img3"]
+  let tempo = 4000;
+  setInterval(slide, tempo)
+
+  function slide() {
+    console.log("slide atual: ", slideAtual);
+
+    $(".progress-bar").animate({
+      with: "0%"
+    })
+
+    if (slideAtual > 0) {
+      $("#banner").removeClass(listaSlides[slideAtual - 1]);
+    } else if (slideAtual == 0) {
+      $("#banner").removeClass(listaSlides[(listaSlides.length) - 1]);
+    }
+
+
+    $("#banner").addClass(listaSlides[slideAtual]);
+
+    slideAtual++;
+
+    if (slideAtual > (listaSlides.length) - 1) {
+      slideAtual = 0;
+    }
+    // $("#largura").css({ "width": "0%" });
+
+    $(".progress-bar").delay(tempo * .8).animate({
+      width: "0%"
+    }, tempo * .2);
+  }
+
+
 })
 
 //Adicionar produtos semi-auto
@@ -186,3 +199,8 @@ function check() {
     document.getElementById('item').style.opacity = 0.4
   }
 }
+
+addEventListener("click", (e) => {
+  e = document.querySelector("#menu").classList.toggle("show")
+  console.log(e)
+})
