@@ -1,45 +1,58 @@
 header {
-  background-color: #303030;
+  background-color: transparent;
 }
 
 .container-grid {
   width: 1200px;
-  height: 150px;
-
-  position: relative;
-
+  height: 100%;
   margin: auto;
   display: flex;
   justify-content: space-between;
+
+  background-color: transparent;
 }
+
+.cabecalho {
+  height: 250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #303030;
+  
+}
+
 
 .menu-left {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   margin-left: 2px;
+  margin-left: 20px;
 }
-
-
 
 .search {
   width: 490px;
   height: 50px;
 
-  margin-top: 15px;
+  margin-top: 0px;
+  margin-bottom: 20px;
 
-  background-color: #404040;
+  background-color: #FFF;
+
+  display: flex;
+  align-items: center;
 
 }
 
 .search>i {
-  align-self: center;
   padding-top: 11px;
   padding-left: 15px;
   font-size: 24px;
-  color: #FFF;
-
-  margin-left: 90%;
+  color: #303030;
+  margin: auto 0;
+  padding: 0;
 }
 
 .search>input {
@@ -47,14 +60,12 @@ header {
   outline: none;
   height: 50px;
   width: 480px;
+  margin: 0;
 
   background: transparent;
 
   font-size: 20px;
-  color: white;
-
-  position: absolute;
-  left: 10px;
+  color: #303030;  
 }
 
 .search ::placeholder {
@@ -63,7 +74,6 @@ header {
 }
 
 .btn-categoria {
-
   padding: 0;
   border: none;
   outline: none;
@@ -77,9 +87,62 @@ header {
   width: 400px;
   height: 65px;
 
-  position: absolute;
+  position: relative;
   left: 0;
 }
+
+.menu-dropdown {
+  width: 340px;
+  height: 200%;
+  border-radius: 5px;
+  background-color: #424242;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+  display: none;
+
+  position: relative;
+  top: 6px;
+  left: 15px;
+  z-index: 1;
+}
+
+.menu-dropdown ul {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-dropdown ul:first-child {
+  padding-top: 7px;
+}
+
+.menu-dropdown li {
+  width: 100%;
+  margin: 0 auto;
+
+  border-radius: 5px;
+
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 4px;
+
+  background-color: #303030;
+}
+
+.menu-dropdown li:hover {
+  background-color: #ABAAAD;
+}
+
+.menu-dropdown p {
+  margin: 0 auto;
+  padding-left: 10px;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFF;
+}
+
 
 .button>i {
   font-size: 40px;
